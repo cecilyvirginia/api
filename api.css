@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Righteous&display=swap');
+.regionmain{
+    display: flex;
+    background-color: rgba(211, 211, 211, 0.322);
+    margin-bottom: 1px;
+    
+}
+body{
+    background-image: url("light-blue-green-blurred-colorful-background-vector.png");
+    position:relative;
+    
+ 
+}
+.ipmain{
+    display:flex;
+   
+    margin-bottom: 1px;
+
+}
+.continentmain{
+    display:flex;
+    margin-bottom: 1px;
+    background-color: rgba(211, 211, 211, 0.322);
+}
+.countrymain{
+    display:flex;
+    margin-bottom: 1px;
+}
+.postmain{
+    display:flex;
+    margin-bottom: 1px;
+    background-color: rgba(211, 211, 211, 0.322);
+}
+.europeanmain{
+    display:flex;
+    margin-bottom: 1px;
+}
+.latitudemain{
+    display:flex;
+    margin-bottom: 1px;
+    background-color: rgba(211, 211, 211, 0.322);
+}
+.timezonemain{
+    display:flex;
+    margin-bottom: 1px;
+}
+.callingcodemain{
+    display:flex;
+    margin-bottom: 1px;
+    background-color: rgba(211, 211, 211, 0.322);
+}
+.currencymain{
+    display:flex;
+    margin-bottom: 1px;
+    
+}
+.langmain{
+    display:flex;
+    margin-bottom: 1px;
+    background-color: rgba(211, 211, 211, 0.322);
+}
+.asnmain{
+    display:flex;
+    margin-bottom: 1px;
+ 
+}
+.orgmain{
+    display:flex;
+    margin-bottom: 1px;
+    background-color: rgba(211, 211, 211, 0.322);
+}
+.maindivision{
+background-color:rgba(255, 255, 255, 0.849);
+height: 690px;
+width: 400px;
+padding-left: 20px;
+margin-top: 40px;
+margin-left: 50%;
+border-radius: 5px;
+color:rgba(0, 0, 0, 0.493);
+font-weight: bold;
+font-family: 'Roboto';
+
+
+}
+.labelone{
+padding-right: 130px;
+}
+.labeltwo{
+    padding-right:154px;
+}
+.labelthree{
+    padding-right:81px;
+}
+.country{
+    padding-right:130px;
+}
+.post {
+    padding-right:104px;
+}
+.europe{
+    padding-right:76px;
+}
+.latitude{
+    padding-right:58px;
+}
+.time{
+    padding-right:119px;
+}
+.calling{
+    padding-right:103px;
+}
+.currency{
+    padding-right:130px;
+}
+.lang{
+    padding-right:140px;
+}
+.asn{
+    padding-right:163px;
+}
+.org{
+    padding-right:167px;
+}
+.firstdiv{
+    margin-left: 50%;
+    margin-bottom: -35px;
+}
+.ipaddress{
+    border-radius: 5px;
+    padding:10px 40px;
+    border-color: white;
+   
+}
+.btnone{
+    border-radius: 5px;
+    padding:10px 55px;
+    background-color:#4169f1;
+    border-color: #4169f1;
+    color: white;
+}
+.map{
+    margin-left: 100px;
+    position: fixed;
+    margin-top: 120px;
+}
+.heading{
+    color: white;
+    margin-left: 90px;
+    margin-top: -60px;
+    font-size: 23px;
+    font-family: 'roboto';
+}
+.location{
+    /* margin-top: -600px; */
+    /* margin-left: -1100px; */
+}
+

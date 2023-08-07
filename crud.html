@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="">
+        <input type="text" class="first">
+        <button class="subone">submit</button>
+        </form>
+    </div>
+    <ul class="tag">
+
+    </ul>
+    
+       
+    
+    <script>
+let tag=document.querySelector(".tag");
+let firstinp=document.querySelector(".first");
+let btnone=document.querySelector(".subone");
+btnone.addEventListener("click",createfunction);
+function createfunction(event){
+    event.preventDefault();
+
+    let newdivision=document.createElement("div");
+    tag.appendChild(newdivision);
+    let secondinput=document.createElement("input");
+    newdivision.appendChild(secondinput);
+    secondinput.value=firstinp.value;
+    secondinput.setAttribute("readonly","readonly");
+    let edit=document.createElement("button");
+    edit.innerHTML="Edit";
+    newdivision.appendChild(edit);
+    edit.addEventListener("click",updatefunction);
+    function updatefunction(){
+        secondinput.removeAttribute("readonly","readonly");
+        newdivision.appendChild(secondinput.value);
+    }
+        let save=document.createElement("button");
+        save.innerHTML="save";
+        newdivision.appendChild(save);
+        save.addEventListener("click",savefunction);
+        function savefunction(){
+            secondinput.setAttribute("readonly","readonly");
+            newdivision.appendChild(secondinput);
+        }
+        let delbtn=document.createElement("button");
+        delbtn.innerHTML=("delete");
+        newdivision.appendChild(delbtn);
+        delbtn.addEventListener("click",delfunction);
+        function delfunction(){
+            newdivision.style.display="none";
+        }
+        
+    
+}
+
+    </script>
+</body>
+</html>

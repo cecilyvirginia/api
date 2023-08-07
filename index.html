@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="api.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <img class="map" src="gettyimages-1195770072-612x612-removebg-preview.png" height="400px" width="700px">
+
+<img class="location" src="location.png">
+    
+    
+    <h4 class="heading">IP Api</h4>
+   <div class="firstdiv">
+    <input type ="text" class="ipaddress" placeholder="122.174.109.25">
+    <button class="btnone">Search Ip</button>
+   </div>
+    <div class="maindivision">
+        
+    <div class="regionmain">
+    <p class="labelone" >Region:</p>
+    <p class="details">Set value</p>
+    </div>
+    
+    <div class="ipmain">
+        <p class="labeltwo">City</p>
+        <p class="citydetails"></p>
+    </div>
+    <div class="continentmain">
+        <p class="labelthree">Continent Code</p>
+        <p class="contdetails"></p>
+
+    </div>
+    <div class="countrymain">
+        <p class="country">Country</p>
+        <p class="countrydetails"></p>
+    </div>
+    <div class="postmain">
+        <p class="post">Postal Code</p>
+        <p class="postaldetails"></p>
+    </div>
+    <div class="europeanmain">
+        <p class="europe">European Union</p>
+        <p class="eudetails"></p>
+    </div>
+    <div class="latitudemain">
+        <p class="latitude">Latitude/Longitude</p>
+        <p class="latdetails"></p>
+    </div>
+    <div class="timezonemain">
+        <p class="time">Time Zone</p>
+        <p class="timedetails"></p>
+    </div>
+    <div class="callingcodemain">
+        <p class="calling">Calling Code</p>
+        <p class="calldetails"></p>
+    </div>
+    <div class="currencymain">
+        <p class="currency">Currency</p>
+        <p class="currencydetails"></p>
+    </div>
+    <div class="langmain">
+        <p class="lang">Version</p>
+        <p class="langdetails"></p>
+    </div>
+    <div class="asnmain">
+        <p class="asn">ASN</p>
+        <p class="asndetails"></p>
+    </div>
+    <div class="orgmain">
+        <p class="org">Org</p>
+        <p class="orgdetails"></p>
+    </div>
+    
+    </div>
+    
+    <script>
+        let firstinput=document.querySelector(".ipaddress");
+        let btnone=document.querySelector(".btnone");
+        let details=document.querySelector(".details");
+        let citydetails=document.querySelector(".citydetails");
+        let contdetails=document.querySelector(".contdetails");
+        let countrydetails=document.querySelector(".countrydetails");
+        let postaldetails=document.querySelector(".postaldetails");
+        let eudetails=document.querySelector(".eudetails");
+        let latdetails=document.querySelector(".latdetails");
+        let timedetails=document.querySelector(".timedetails");
+        let calldetails=document.querySelector(".calldetails");
+        let currencydetails=document.querySelector(".currencydetails");
+        let langdetails=document.querySelector(".langdetails");
+        let asndetails=document.querySelector(".asndetails");
+        let orgdetails=document.querySelector(".orgdetails");
+
+        btnone.addEventListener("click",ipfunction);
+    
+        function ipfunction(){
+        fetch("https://ipapi.co/"+firstinput.value+"/json/")
+       .then(firstvariable=> {return firstvariable.json()})
+       .then((data)=>{
+         details.innerHTML=data.region;
+         citydetails.innerHTML=data.city;
+         contdetails.innerHTML=data.continent_code;
+         countrydetails.innerHTML=data.country;
+         postaldetails.innerHTML=data.postal;
+         eudetails.innerHTML=data.in_eu;
+         latdetails.innerHTML=data.latitude;
+         timedetails.innerHTML=data.timezone;
+         calldetails.innerHTML=data.country_calling_code;
+         currencydetails.innerHTML=data.currency;
+         langdetails.innerHTML=data.version;
+         asndetails.innerHTML=data.asn;
+         orgdetails.innerHTML=data.org;
+
+        })}
+
+            
+        anime({
+  targets: '.map',
+  translateX: 8,
+//   endDelay: 1000,
+loop: true,
+  easing: 'easeInOutSine',
+  direction: 'alternate'
+});
+    </script>
+</body>
+</html>

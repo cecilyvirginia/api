@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Righteous&display=swap');
+body{
+    
+}
+.employeedetails{
+    text-align: center;
+    background-color:#034794f6;
+    margin-top: 0px;
+    color:whitesmoke;
+    height: 50px;
+}
+.mainbutton{
+background-color:#4B9CD3;
+color: white;
+padding:10px 20px;
+border-color:#4B9CD3;
+border-radius: 10px;
+font-size: 12px;
+margin-bottom: 20px;
+font-weight: bold;
+}
+.secdivision{
+    height:520px;
+    width:30%;
+    margin:auto;
+    /* background-color: #023047 ; */
+    background-image: url("img_best_employee_management_apps.png");
+    background-size: cover;
+    
+    padding-top: 20px;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    
+}
+label{
+    margin-left: 25px;
+    
+    font-weight: bolder;
+    color:white;
+   
+    font-size: 15px;
+    
+    
+}
+input{
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px 30px;
+    width:170px;
+    border-radius: 10px;
+    border-color:rgba(255, 255, 255, 0.278);
+    background-color: aliceblue;
+   
+}
+.subone{
+    margin-left: 50px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color:white;
+    color:#2c1608aa;
+    margin-top: 30px;
+    width:240px;
+    background-color: aliceblue;
+    border-color: white;
+    
+}
+.tag{
+background-color:#023047; ;
+padding-left: 40px;
+}
+.editbutton{
+    background-color:#4B9CD3;
+    margin-left: 70px;
+    padding: 10px 30px;
+    color:black;
+    
+    margin-right:10px ;
+    border-radius: 5px;
+    border-color: #4B9CD3;
+    color: white;
+}
+#details{
+    font-size: 10px !important;
+    margin-top: 0px;
+    margin-left: 80px;
+    color:white !important;
+}
+#detailsone{
+    font-size: 10px !important;
+    margin-top: 0px;
+    margin-left: 80px;
+    color:white;
+}
+#detailstwo{
+    font-size: 10px !important;
+    margin-top: 0px;
+    margin-left: 80px;
+    color:white;
+}
+li{
+    list-style-type: none;
+}
+p{
+    
+    font-size: 20px;
+    font-weight: bold;
+    color: #023047;
+    
+}
+.empfirst{
+margin-left: 90px;
+
+}
+.emplast{
+    margin-left: 185px;
+}
+.empid{
+    margin-left: 195px;
+}
+.tag{
+    background-color:#034794f6;
+}
